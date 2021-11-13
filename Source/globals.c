@@ -16,7 +16,7 @@ void change_extension(char *restrict file_name, const char *restrict extension) 
 	}
 }
 
-inline void debug_print(int level, char *format, ...) {
+void debug_print(int level, char *format, ...) {
 	if (level <= debug_level) {
 		va_list args;
 		va_start(args, format);
